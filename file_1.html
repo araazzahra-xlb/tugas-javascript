@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script></script>
+    <!--1-->
+    <script src="javascript.js"></script>
+    <!--3-->
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      //no capital for the name
+      //Variable (ways to use)
+      let a = 1; //no need to specify the variable type
+      const name1 = "Angga";
+      //outdated way, because hardware system have been customized to the newer version, which is HTML 5. (Below is for HTML 1-4)
+      var b = 10;
+      text = "This is a text";
+      //there is no output for javascript. We have the own formula
+      let c = a + b;
+      console.log("Hello, " + name1 + "!"); //-> will be visible if you download node js
+
+      if (a < 10) {
+        // java script still using semi coloumns
+        text = "Variable A is less than 10 :( " + "<br>";
+      } else {
+        text = "Variable B is more than or equal tto 10";
+      }
+      //output to HTML tag
+      document.getElementById("demo").innerHTML = "The Text " + text;
+      //inner html means u wil show the output
+      //"text" is a variable
+
+      //1. variable declaration
+      const name = "ara";
+      let age = 15;
+      let isStudent = true;
+
+      //1 output
+      document.getElementById("demo1").innerHTML +=
+        "Name: " +
+        name +
+        "<br>" +
+        "Age: " +
+        age +
+        "<br>" +
+        "Is Student? " +
+        isStudent;
+
+      //2. Arithmetic Operation
+      let variabel1 = 10;
+      let variabel2 = 5;
+
+      let penjumlahan = variabel1 + variabel2;
+      let pengurangan = variabel1 - variabel2;
+      let perkalian = variabel1 * variabel2;
+      let pembagian = variabel1 / variabel2;
+
+      //2 output
+      document.getElementById("demo2").innerHTML +=
+        "Arithmetic Operation Result:<br>" +
+        variabel1 +
+        " + " +
+        variabel2 +
+        " = " +
+        penjumlahan +
+        "<br>" +
+        variabel1 +
+        " - " +
+        variabel2 +
+        " = " +
+        pengurangan +
+        "<br>" +
+        variabel1 +
+        " x " +
+        variabel2 +
+        " = " +
+        perkalian +
+        "<br>" +
+        variabel1 +
+        " / " +
+        variabel2 +
+        " = " +
+        pembagian;
+
+      //3. If-Else
+      let score = 85;
+
+      if (score >= 75) {
+        text1 = "LULUS";
+      } else {
+        text1 = "TIDAK LULUS";
+      }
+      //3 output
+      document.getElementById("demo3").innerHTML = "Kamu " + text1;
+
+      //4. Looping
+      let loopResult = "LOOPING 1-10 <br>";
+
+      for (let i = 1; i < 10; i++) {
+        loopResult += i + "<br>";
+      }
+      // output
+      document.getElementById("demo4").innerHTML = loopResult;
+    </script>
+    <!--1-->
+  </body>
+</html>
